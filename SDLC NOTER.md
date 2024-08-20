@@ -14,7 +14,7 @@ IT folket er blevet mindre fokuseret og belært omkring metoder.
 
 ## Kims foretrækkede Model (System Development Life Cycle):
 1. Planning
-2. Analysis (Handler om virkeligheden)
+2. Analysis (Handler om virkeligheden, kortlæg virkeligheden)
 3. Design (Handler om hvordan det virker systemmæssigt)
 4. Implementation
 5. Testing & Integration
@@ -28,3 +28,5 @@ IT folket er blevet mindre fokuseret og belært omkring metoder.
 - Testing
 - Deployment
 - Maintenence
+
+Det fede ved modellen er, at man altid lærer fra det sidste projekt.
