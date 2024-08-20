@@ -30,3 +30,12 @@ IT folket er blevet mindre fokuseret og belært omkring metoder.
 - Maintenence
 
 Det fede ved modellen er, at man altid lærer fra det sidste projekt.
+
+## Procesmodeller:
+- Kendes på værdigrundlaget for og rækkefølgen af aktiviteter
+- analyse -> Design -> Implementering
+- Paradigmer: Agile
+
+## Metoder
+- Kendes på indholdet i de enkelte aktiviteter
+- Paradigmer: 
