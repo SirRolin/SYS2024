@@ -1,10 +1,12 @@
 # LOGBOG
 
 ## CASEIDÉER:
-- Noget AI?
 - Online marketplace
-- Factoryspil med community recipes
+  - Samleobjekter, kategori opretning, samling, salg - byt - køb
 - Document management (Google Drive), Status, Doc Lifecycle, Manual
-- Document management, Billeder m. links, upload selv billeder, pladser links på billederne, noter til billederne.
+  - Hosting af lister, dokumenter, videoer og billeder.
+  - Noter til elementerne.
+  - Late Feature, kunne embedde links i positioner på billeder.
 - Videohosting (Youtube)
-- Samleobjekt hjemmeside, selv lave category, samling, salg - byt - køb
+  - kommentare, likes, trends, recommended, tags.
+  - Late Feature flair feature.
