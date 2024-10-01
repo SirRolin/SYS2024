@@ -1,0 +1,13 @@
+@startuml
+'https://plantuml.com/class-diagram
+Title Domain Model v1
+hide circle
+hide methods
+
+class CredentialsValidator
+class FileValidator
+class UserAccount
+
+
+
+@enduml
