@@ -1,0 +1,61 @@
+
+@startuml
+Title DomainModel
+hide circle
+hide methods
+
+class Customer {
+    name
+    email
+}
+class Admin{
+    userName
+}
+class Orders{
+    customer name
+    customer email
+    date
+    ordreNummer
+    status*
+    itemList
+    constructionGuide
+    illustration
+
+}
+class Carport{
+    width
+    length
+    illustration
+}
+class Shed{
+   width
+   length
+   illustration
+}
+class CarportCustomizer{
+    calculator
+    engine
+}
+class MaterialUpdater{
+    update methods
+}
+class itemList{
+    quantity
+    description
+}
+class meterials{
+    description
+}
+class reciept{
+}
+
+Orders "*" -up- "1" Customer: generates <
+Admin "1" -left- "*" Orders: > custemizes
+Orders "1" -down- "1" Carport: has >
+Carport "1" -right- "0-1" Shed: has >
+Admin "1" -up- "1" CarportCustomizer :uses >
+Admin "1" -down- "1" MaterialUpdater :uses >
+Orders "1" -left- "*" itemList: contains >
+itemList "*" -down- "1" meterials: has >
+Orders "1" -left- "*" reciept: >
+@enduml

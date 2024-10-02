@@ -4,10 +4,54 @@ Title Domain Model v1
 hide circle
 hide methods
 
-class CredentialsValidator
-class FileValidator
-class UserAccount
+class CredentialsValidator{
 
+}
+class GDPRValidator{
 
+}
+class CompanyValidator{
+
+}
+class Company{
+    name
+    email
+}
+class System{
+
+}
+class Subscription{
+    expiration_date
+    start_date
+}
+class Plan{
+    name
+    storage_size
+    price
+    upload_speed
+    download_speed
+}
+
+class Role{
+    name
+    type
+    clearance_level
+}
+
+class UserAccount {
+    name
+    surname
+    company_email
+    password
+}
+
+Company "1" -left- "*" Subscription: has >
+Company "1" -down- "*" UserAccount: has >
+System "1" -down- "1" CredentialsValidator: has >
+System "1" -down- "1" GDPRValidator: has >
+Company "1" -down- "1" CompanyValidator: has >
+System "1" -down- "*" Company: has >
+UserAccount "*" -down- "*" Role: has >
+Subscription "*" -down- "1" Plan: has >
 
 @enduml
