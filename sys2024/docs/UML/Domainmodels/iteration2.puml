@@ -1,0 +1,76 @@
+@startuml
+'https://plantuml.com/class-diagram
+Title Domain Model v1
+hide circle
+hide methods
+
+class CredentialsValidator{
+
+}
+class GDPRValidator{
+
+}
+class CompanyValidator{
+
+}
+class Company{
+    name
+    email
+}
+class System{
+
+}
+class Subscription{
+    expiration_date
+    start_date
+}
+class Plan{
+    name
+    storage_size
+    price
+    upload_speed
+    download_speed
+}
+
+class Role{
+    name
+    type
+    clearance_level
+}
+
+class UserAccount {
+    name
+    surname
+    company_email
+    password
+}
+
+class Folder {
+    name
+}
+
+class File {
+    file_name
+    size
+    location
+}
+
+class Shortcut {
+    folder_or_file
+}
+
+Company "1" -left- "*" Subscription: has >
+Company "1" -down- "*" UserAccount: has >
+System "1" -down- "1" CredentialsValidator: has >
+System "1" -down- "1" GDPRValidator: has >
+Company "1" -down- "1" CompanyValidator: has >
+System "1" -down- "*" Company: has >
+UserAccount "*" -down- "*" Role: has >
+Subscription "*" -down- "1" Plan: has >
+Folder "1" -down- "*" File: has >
+Folder "1..2" -down- "*" Shortcut: has >
+File "0" -right- "0..1" Shortcut: has <
+Company "1" - "*" Folder: has >
+Folder "*" - "*" Role: has >
+
+@enduml
